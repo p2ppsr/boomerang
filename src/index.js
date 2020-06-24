@@ -1,4 +1,5 @@
 import JSON2QS from './JSON2QS'
+import nodeFetch from 'node-fetch'
 
 export default async (method, url, params = {}, headers = {}) => {
   if (method === 'GET') {
@@ -16,8 +17,7 @@ export default async (method, url, params = {}, headers = {}) => {
   if (typeof fetch === 'function') {
     correctFetch = fetch
   } else {
-    correctFetch = await import('node-fetch')
-    correctFetch = correctFetch.default
+    correctFetch = nodeFetch
   }
 
   const result = await correctFetch(url, {
