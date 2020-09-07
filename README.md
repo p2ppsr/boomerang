@@ -1,4 +1,4 @@
-# Boomerang
+# @cwi/boomerang
 
 Simplified wrapper around the fetch API
 
@@ -9,7 +9,7 @@ You throw the boomerang through cyberspace at a URL. It comes back and hits you 
 ## Usage
 
 ```js
-import boomerang from '@p2ppsr/boomerang'
+import boomerang from '@cwi/boomerang'
 
 const data = await boomerang(
   'POST',
@@ -51,5 +51,5 @@ This function will throw native errors if they occur. No custom errors are defin
 ## Confidentiality
 
 This is proprietary software developed and owned by Peer-to-peer Privacy Systems Research, LLC. 
-Except as provided for in your partnership agreement with us, you may not use this software and 
+Except as provided for in your CWI Partner Agreement with us, you may not use this software and 
 must keep it confidential.

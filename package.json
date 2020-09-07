@@ -1,6 +1,6 @@
 {
-  "name": "@p2ppsr/boomerang",
-  "version": "0.0.2",
+  "name": "@cwi/boomerang",
+  "version": "0.1.0",
   "description": "Simplified wrapper around the fetch API",
   "main": "build/index.js",
   "repository": "git+https://github.com/p2ppsr/boomerang",
