@@ -1,17 +1,14 @@
 {
-  "name": "@cwi/boomerang",
+  "name": "boomerang-http",
   "version": "0.1.0",
   "description": "Simplified wrapper around the fetch API",
   "main": "build/index.js",
   "repository": "git+https://github.com/p2ppsr/boomerang",
   "author": "Peer-to-Peer Privacy Systems Research LLC",
-  "license": "PROPRIETARY",
+  "license": "Open BSV License",
   "scripts": {
     "build": "rollup -c --environment BUILD:production",
     "prepublishOnly": "npm run build"
-  },
-  "publishConfig": {
-    "registry": "https://npm-registry.babbage.systems/"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",

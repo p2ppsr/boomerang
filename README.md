@@ -1,4 +1,4 @@
-# @cwi/boomerang
+# boomerang-http
 
 Simplified wrapper around the fetch API
 
@@ -9,7 +9,7 @@ You throw the boomerang through cyberspace at a URL. It comes back and hits you 
 ## Usage
 
 ```js
-import boomerang from '@cwi/boomerang'
+import boomerang from 'boomerang-http'
 
 const data = await boomerang(
   'POST',
@@ -42,14 +42,12 @@ Name       | Optional | Description
 
 #### Return Value
 
-The function will either return a JavaScript object (if the response was JSON), or a string value otherwise.
+The function will return a Promise for either a JavaScript object (if the response was JSON), or a string value.
 
 #### Throws
 
-This function will throw native errors if they occur. No custom errors are defined. This is a wrapper for the fetch API. Please consult the documentation for more information.
+This function will throw native errors if they occur. No custom errors are defined. This is a wrapper for the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). Please consult the documentation for more information.
 
-## Confidentiality
+## License
 
-This is proprietary software developed and owned by Peer-to-peer Privacy Systems Research, LLC. 
-Except as provided for in your CWI Partner Agreement with us, you may not use this software and 
-must keep it confidential.
+The license for the code in this repository is the Open BSV License.
